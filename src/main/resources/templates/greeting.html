@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<!--link rel="stylesheet" href="/assets/css/bootstrap.min.css" type="text/css" />
+<script src="/assets/js/bootstrap.min.js" type="text/javascript"/-->
+<link rel="stylesheet"
+      th:href="@{/css/bootstrap.min.css}"
+      href="../../css/bootstrap.min.css"/>
+<head>
+    <title>Getting Started: Serving Web Content</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<!--@thymesVar id="name" type="string"-->
+<p th:text="'Hello, ' + ${name} + '!'" />
+
+<p>
+    <button class="btn btn-large btn-primary" type="button">Large button</button>
+    <button class="btn btn-large" type="button">Large button</button>
+</p>
+
+</body>
+</html>
