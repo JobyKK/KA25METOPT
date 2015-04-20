@@ -67,6 +67,8 @@ public class MethodController {
     @RequestMapping(value="/methods/test", method= RequestMethod.POST)
     public String greetingSubmit(@ModelAttribute ConvertData convertData, Model model) {
         model.addAttribute("convertData", convertData);
+//        System.out.println(convertData.getMatrix().size());
+        System.out.println(convertData.getMatrixRaw().size());
         return "result";
     }
 
